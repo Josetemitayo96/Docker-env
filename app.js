@@ -8,5 +8,5 @@ app.get("/", function(req, res){
 });
 
 app.listen(port,()=>{
-	console.log(`Node server started on port : ${port}`)
+	console.log(`i love lover ${process.env.MSG}, ${process.env.HOPE}`)
 });
