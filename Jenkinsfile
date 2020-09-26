@@ -18,7 +18,7 @@ pipeline {
 
         stage('docker build'){
             steps{
-                sh 'docker build --build-arg tayo=WORKING, --build-arg ife=GREAT .'
+                sh 'docker build --build-arg tayo="${first}", --build-arg ife="${second}" .'
             }
         }
 
