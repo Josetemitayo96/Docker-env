@@ -18,8 +18,8 @@ pipeline {
 
         stage('docker build'){
             steps{
-                sh 'docker build -t envtest --build-arg tayo="${first}", --build-arg ife="${second}" .'
-                sh 'docker run envtest'
+                sh 'docker build -t envtest2 --build-arg tayo=first, --build-arg ife=second .'
+                sh 'docker run envtest2'
             }
         }
 
