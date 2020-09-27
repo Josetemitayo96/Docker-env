@@ -19,8 +19,8 @@ pipeline {
         stage('docker build'){
             steps{
                 sh 'docker build -t envtest2 --build-arg tayo=$first \
-                --build-arg ife=$second .'
-                sh 'docker run envtest2'
+                --build-arg ife=$second --build-arg femi=$third .'
+                sh 'docker run envtest2:latest'
             }
         }
 
